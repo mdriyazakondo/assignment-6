@@ -215,14 +215,15 @@ const centerGreenData = (plants) => {
           <p class='text-green-600 rounded-full py-2 px-4 bg-green-100 font-medium'>${name}</p>
           <p class='text-sm font-semibold'>$${price}</p>
         </div>
-        <button onclick="rightSideBtn('${id}', '${category}', ${price})" class='py-2 cursor-pointer font-medium bg-green-600 text-white w-full rounded-full'>Add To Cart</button>
+        <button onclick="rightSideBtn('${id}', '${description}', '${category}', ${price})" class='py-2 cursor-pointer font-medium bg-green-600 text-white w-full rounded-full'>Add To Cart</button>
       </div>
     `;
   });
 };
 
 // Cart Functions
-const rightSideBtn = (id, category, price) => {
+const rightSideBtn = (id, description, category, price) => {
+  alert(description);
   const existingItem = cart.find((item) => item.id === id);
   if (existingItem) {
     existingItem.quantity += 1;
