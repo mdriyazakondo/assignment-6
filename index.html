@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 6</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="bg-green-500">
+      <nav class="max-w-7xl mx-auto flex items-center justify-between py-4">
+        <div>
+          <h2 class="text-2xl font-semibold text-white">Green Earth</h2>
+        </div>
+        <ul class="hidden md:flex items-center justify-center gap-6">
+          <li class="text-white text-xl font-medium"><a href="">About</a></li>
+          <li class="text-white text-xl font-medium"><a href="">Gallery</a></li>
+          <li class="text-white text-xl font-medium">
+            <a href="">Plant a Tree</a>
+          </li>
+        </ul>
+        <ul class="md:hidden flex items-center justify-center gap-6">
+          <li class="text-white text-xl font-medium"><a href="">About</a></li>
+          <li class="text-white text-xl font-medium"><a href="">Gallery</a></li>
+          <li class="text-white text-xl font-medium">
+            <a href="">Plant a Tree</a>
+          </li>
+        </ul>
+        <button
+          class="py-2 px-6 rounded-full text-sm font-semibold bg-yellow-300 text-green-600 cursor-pointer"
+        >
+          Plant a Tree
+        </button>
+      </nav>
+    </header>
+
+    <section class="bg-[#cff0dc]">
+      <div class="flex items-center justify-between">
+        <div>
+          <img src="./assets/hero-leaf1.png" alt="" />
+        </div>
+        <div class="flex flex-col text-center space-y-4">
+          <h2 class="text-4xl font-bold">Plant a Tree, Grow a Future</h2>
+          <p class="text-sm font-medium text-gray-500">
+            Join our mission to plant 1 million trees and make the Earth greener
+            for future generations.
+          </p>
+          <div class="mt-6">
+            <button
+              class="py-2 px-6 rounded-full text-sm font-semibold bg-yellow-300 text-green-600 cursor-pointer"
+            >
+              Get Involved
+            </button>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/hero-leaf2.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <main class="bg-[#f0fdf4]">
+      <h2 class="text-center pt-24 text-4xl font-semibold">
+        Choose Your Trees
+      </h2>
+      <section class="grid grid-cols-1 md:grid-cols-12 mx-24 py-12 gap-4">
+        <div class="col-span-1 md:col-span-2">
+          <h2 class="text-2xl font-medium mb-3">Categories</h2>
+          <ul id="category" class="space-y-4"></ul>
+        </div>
+        <div class="col-span-1 md:col-span-8">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+            id="greenTreeAllData"
+          ></div>
+        </div>
+        <div class="col-span-1 md:col-span-2 bg-white rounded-md p-4">
+          <h3 class="text-2xl font-semibold">Your Cart</h3>
+          <div id="rightSide"></div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
